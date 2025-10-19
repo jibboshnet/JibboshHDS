@@ -43,11 +43,11 @@ indexLists()
 
 async function fetchOnlineBackground() {
   try {
-    const response = await fetch('/bing-background');
+    const response = await fetch('/jbg');
     onlineBg = await response.json();
 
     if (!onlineBg || !onlineBg.images || !onlineBg.images[0] || !onlineBg.images[0].url) {
-      console.error("Invalid response from /bing-background:", onlineBg);
+      console.error("Invalid response from /jbg:", onlineBg);
       return;
     }
 
