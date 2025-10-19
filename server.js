@@ -272,14 +272,14 @@ app.get('/data', (req, res) => {
     })
 })
 
-app.get('/bing-background', async (req, res) => {
+app.get('/jbg', async (req, res) => {
   try {
-      const response = await fetch('https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US');
+      const response = await fetch('https://weather-prod.jibbosh.com/f/');
       const data = await response.json();
       res.json(data);
-      console.log("${logTheFrickinTime} Client requested Bing background image.")
+      console.log("${logTheFrickinTime} Client requested Jibbosh background image.")
   } catch (error) {
-      res.status(500).json(`${logTheFrickinTime} Error fetching Bing background image: ${error}`);
+      res.status(500).json(`${logTheFrickinTime} Error fetching Jibbosh background image: ${error}`);
   }
 });
 
