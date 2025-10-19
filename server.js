@@ -12,14 +12,14 @@ const serverConfig = {
 
   "locationIndex": {
     "locations": [
-      "Saskatoon",
-      "Regina",
+      "Quebec City",
+      "Fredericton",
       "Edmonton",
       "Calgary",
       "Vancouver"
     ],
     "ldlLocations": [
-      "Saskatoon, SK",
+      "Quebec City, QC",
       "Outlook, SK",
       "Rosetown, SK",
       "Melfort, SK",
