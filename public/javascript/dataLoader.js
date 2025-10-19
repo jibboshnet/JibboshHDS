@@ -51,7 +51,7 @@ async function fetchOnlineBackground() {
       return;
     }
 
-    document.querySelector('.wallpaper').style.backgroundImage = `url(https://bing.com${onlineBg.images[0].url})`;
+    document.querySelector('.wallpaper').style.backgroundImage = `url(https://weather-prod.jibbosh.com/bg/${onlineBg.images[0].url})`;
 
   } catch (error) {
     console.error("Error fetching online background:", error);
