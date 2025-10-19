@@ -8,7 +8,7 @@ const serverConfig = {
   "twcApiKey": "e1f10a1e78da46f5b10a1e78da96f525",
   "units": "m",
 
-  "webPort": 3000,
+  "webPort": 5494,
 
   "locationIndex": {
     "locations": [
